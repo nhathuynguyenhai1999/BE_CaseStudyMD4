@@ -5,6 +5,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 @RequestMapping("/")
+/*
+ * Home controller
+ */
 public class HomeController {
 
     @RequestMapping
