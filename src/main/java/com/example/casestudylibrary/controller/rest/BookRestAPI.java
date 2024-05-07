@@ -58,7 +58,7 @@ public class BookRestAPI {
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<BookDetailResponse> findById(@ExistsEntity(value = Book.class, message = "Book not found" ) @PathVariable Long id) {
+    public ResponseEntity<BookDetailResponse> findById(@PathVariable Long id) {
         return ResponseEntity.ok(bookService.findBookDetailById(id));
     }
 
